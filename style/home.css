@@ -172,7 +172,7 @@ nav ul li a {
 }
 
 .c3{
-    padding: 3em 1.2em;
+    padding: 3em 1.2em 4em;
     text-align: center;
 }
 
@@ -229,14 +229,16 @@ nav ul li a {
 .picture1, .picture{
     width: 100%;
     height: 20em;
-    display: flex;
-    align-items: end;
-    padding: 1em;
     color: white;
 }
 
-.picture1 h2, .picture h2{
-    font-weight: 500;
+.picture1 h3, .picture h3{
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    align-items: end;
 }
 
 .nature{
@@ -281,6 +283,12 @@ nav ul li a {
     background-position: center;
 }
 
+.portfolio-sec{
+    text-align: center;
+    margin-bottom: 5em;
+    padding: 0 1em;
+}
+
 .portfolio-sec a button {
     margin-top: 1.5em;
     text-transform: uppercase;
@@ -299,6 +307,37 @@ nav ul li a {
 .portfolio-sec a button:hover {
     background: var(--primary-color);
     color: white;
+}
+
+.contact-section{
+    border-top: .5px solid rgba(0, 0, 0, 0.411);
+}
+
+.c4{
+    padding: 3em 1em 3em;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+
+.contact-us p{
+    font-size: .8rem;
+}
+
+.contact-us h2{
+    font-weight: 500;
+}
+
+.contact-us i{
+    background: var(--primary-color);
+    color: white;
+    padding: .3em;
+    font-size: 2.5rem;
+    border-radius: 50%;
 }
 
 
@@ -426,7 +465,7 @@ footer{
 @media screen and (min-width: 768px){
 
     header{
-        padding: .7em 1.5em;
+        padding: 1em 2em;
     }
     
     header nav{
@@ -451,7 +490,7 @@ footer{
     header nav ul li a{
         color: white;
         font-weight: 300;
-        font-size: .9rem;
+        font-size: .8rem;
         position: relative;
     }
 
@@ -478,22 +517,18 @@ footer{
     }
 
     .hero-section h1{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
-    .c3{
-        padding: 1em;
+    .hero-section p{
+        width: 70%;
+        margin: .8em auto 4em;
+    }
+
+    .about-sec h3{
+        font-size: 1.4rem;
     }
     
-    .gallery{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 1em;
-    }
-
-    .gallery-content a p{
-        font-size: 1.1rem;
-    }
 }
 
 @media screen and (min-width: 800px) {
@@ -518,6 +553,33 @@ footer{
     .quick-links h1 {
         font-size: 1.5rem;
     }
+
+    .about-sec p{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .c3{
+        padding: 5em 1.2em 3em;
+    }
+
+    .about-sec a button{
+        margin-top: 2em;
+    }
+
+    .row{
+        flex-direction: row;
+        gap: unset;
+    }
+
+    .portfolio-sec{
+        gap: unset;
+    }
+
+    .portfolio-sec a button{
+        margin-top: 4em;
+    }
+    
 }
 
 
@@ -537,10 +599,56 @@ footer{
     }
 
     .hero-section h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .hero{
-        height: 70vh;
+        height: 90vh;
     }
+
+    .about-sec h3{
+        font-size: 1.5rem;
+    }
+
+    .about-sec p{
+        font-size: .9rem;
+    }
+
+    .about-sec a button{
+        margin-top: 3em;
+    }
+
+    .picture1{
+        height: 30em;
+    }
+
+    .picture{
+        height: 24em;
+    }
+
+    .c4{
+        padding: 4em 1em 4em;
+    }
+
+    .contact-us{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .portfolio-sec a button{
+        margin-top: 6em;
+    }
+
+    .picture:hover h3,
+    .picture1:hover h3{
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .picture:hover h3,
+    .picture1:hover h3{
+        color: var(--primary-color);
+        background: rgba(0, 0, 0, 0.409);
+    }
+
 }
