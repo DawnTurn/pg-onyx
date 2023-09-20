@@ -186,6 +186,7 @@ nav ul li a {
 .about-sec p{
     font-size: .8rem;
     letter-spacing: .9px;
+    font-weight: 300;
     line-height: 1.5rem;
 }
 
@@ -595,7 +596,7 @@ footer{
     }
 
     header nav ul{
-        gap: 6em;
+        gap: 4em;
     }
 
     .hero-section h1{

@@ -19,13 +19,6 @@ body {
     overflow: hidden;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    background: #e5e5e5;
-    z-index: 999;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -134,26 +127,25 @@ nav ul li a {
 }
 
 .first{
-    background: linear-gradient(0deg, #000000bb, #000000bb), url(../images/front-view-kitchen-counter.jpg);
-    height: 60vh;
+    background: linear-gradient(0deg, #000000bb, #000000bb), url(../images/woman-viewing-photos-camera.jpeg);
+    height: 50vh;
     background-size: cover;
     background-position: center;
     color: white;
 }
 
-
 .hero-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 40vh;
     padding: 1em;
 }
 
 .hero h1{
     color: var(--primary-color);
     font-weight: 500;
-    font-size: 2.3rem;
+    font-size: 1.9rem;
     margin: 2px;
 }
 
@@ -164,11 +156,14 @@ nav ul li a {
 }
 
 .c3{
-    padding: 1em;
+    padding: 3em .5em;
 }
 
 .c3-desc-content p{
     font-weight: 300;
+    font-size: .8rem;
+    letter-spacing: .9px;
+    line-height: 1.5rem;
 }
 
 .c3-desc-content p span{
@@ -178,23 +173,108 @@ nav ul li a {
 }
 
 .c3-services{
-    background: var(--primary-color);
-    color: white;
-    padding: 2em 2em;
-    margin: 3em 0;
+    color: black;
+    padding: 1em;
+    margin: 3em 0 0;
     border-radius: .6em;
 }
 
-.c3-services h3{
+.c3-services h1{
     font-weight: 500;
-    margin: 0 0 .8em;
+    margin: 0 0 1em;
     font-size: 1.4rem;
+    text-align: center;
 }
 
-.c3-services ul{
+.services-container{
     display: flex;
     flex-direction: column;
+    gap: 2.5em;
+}
+
+.services h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .7em;
+}
+
+.services-content{
+    padding: 2.5em 1.5em;
+    color: white;
+    border-radius: .2em;
+}
+
+.services-content h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.services-content p{
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: .9px;
+}
+
+.wedding{
+    background: linear-gradient(0deg, #0000008a, #0000008a), url(../images/wedding.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.event{
+    background: linear-gradient(0deg, #0000008a, #0000008a), url(../images/Events.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.portrait{
+    background: linear-gradient(0deg, #0000008a, #0000008a), url(../images/portrait.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nature{
+    background: linear-gradient(0deg, #0000008a, #0000008a), url(../images/nature-land.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.product{
+    background: linear-gradient(0deg, #0000008a, #0000008a), url(../images/product.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-section {
+    border-top: .5px solid rgba(0, 0, 0, 0.411);
+}
+
+.c4 {
+    padding: 3em 1em 3em;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: .5em;
+}
+
+.contact-us p {
+    font-size: .8rem;
+}
+
+.contact-us h2 {
+    font-weight: 500;
+}
+
+.contact-us i {
+    background: var(--primary-color);
+    color: white;
+    padding: .3em;
+    font-size: 2.5rem;
+    border-radius: 50%;
 }
 
 footer {
@@ -343,7 +423,7 @@ h1 {
     }
 
     header nav ul li a{
-        color: black;
+        color: white;
         font-weight: 300;
         font-size: .9rem;
         position: relative;
@@ -372,24 +452,25 @@ h1 {
     }
 
     .c3{
-        display: flex;
-        align-items: center;
         gap: 2em;
         margin: 3em 0;
     }
 
-    .c3-desc-content{
-        width: 50%;
-    }
-
     .c3-desc-content p{
         line-height: 2em;
+        font-size: .85rem;
         letter-spacing: .9px;
+        width: 80%;
+        margin: 0 auto;
     }
 
-    .c3-services{
-        width: 50%;
-        margin: 0;
+    .services-container{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .services-content{
+        height: 90%;
     }
 }
 
@@ -415,16 +496,6 @@ h1 {
     .quick-links h1 {
         font-size: 1.5rem;
     }
-
-    .hero{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero p{
-        width: 70%;
-    }
 }
 
 @media screen and (min-width: 1024px){
@@ -439,19 +510,69 @@ h1 {
     }
 
     header nav ul{
-        gap: 6em;
+        gap: 4em;
     }
 
     .c3{
         margin: 4em auto;
     }
 
+    .c3-desc-content p{
+        font-size: .9rem;
+    }
+
     .hero h1{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .hero p{
-        font-size: 1rem;
+        font-size: .9rem;
         letter-spacing: .8px;
     }
+
+    .c4 {
+        padding: 4em 1em 4em;
+    }
+
+    .contact-us {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .c3-services h1{
+        width: 40%;
+        margin: 0 auto 2em;
+    }
+
+    .services-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .services-content {
+        height: 18em;
+    }
+
+    .services-content h3{
+        transform: translateY(200px);
+        transition: .4s;
+    }
+
+    .services-content p{
+        transform: translateY(100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: .5s;
+    }
+
+    .services-content:hover h3{
+        transform: translateY(0);
+    }
+
+    .services-content:hover p{
+        transform: translateY(0);
+        pointer-events: all;
+        opacity: 1;
+    }
+
 }

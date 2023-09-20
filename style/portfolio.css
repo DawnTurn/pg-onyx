@@ -41,6 +41,7 @@ header a {
 header a h1 {
     display: flex;
     align-items: center;
+    font-size: 1.5rem;
 }
 
 header a h1 i {
@@ -187,6 +188,37 @@ nav ul li a {
 
 .box img{
     object-fit: cover;
+}
+
+.contact-section {
+    border-top: .5px solid rgba(0, 0, 0, 0.411);
+}
+
+.c4 {
+    padding: 3em 1em 3em;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+
+.contact-us p {
+    font-size: .8rem;
+}
+
+.contact-us h2 {
+    font-weight: 500;
+}
+
+.contact-us i {
+    background: var(--primary-color);
+    color: white;
+    padding: .3em;
+    font-size: 2.5rem;
+    border-radius: 50%;
 }
 
 footer {
@@ -338,7 +370,7 @@ h1 {
     header nav ul li a {
         color: white;
         font-weight: 300;
-        font-size: .9rem;
+        font-size: .85rem;
         position: relative;
     }
 
@@ -365,7 +397,7 @@ h1 {
     }
 
     .hero h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
 }
@@ -408,7 +440,7 @@ h1 {
     }
 
     header nav ul {
-        gap: 6em;
+        gap: 4em;
     }
 
     .grid-container{
@@ -494,6 +526,15 @@ h1 {
 
     .grid-container{
         grid-gap: .1em;
+    }
+
+    .c4 {
+        padding: 4em 1em 4em;
+    }
+
+    .contact-us {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
 }
