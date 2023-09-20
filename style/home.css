@@ -612,6 +612,7 @@ footer{
 
     .about-sec p{
         font-size: .9rem;
+        font-weight: 200;
     }
 
     .about-sec a button{

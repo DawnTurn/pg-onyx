@@ -5,8 +5,8 @@
 }
 
 :root{
-    --primary-color: #846d62;
-    --secondary-color: #a8a29c;
+    --primary-color: #fca431;
+    --secondary-color: #ff800039;
     --back-color: whitesmoke;
 }
 
@@ -33,9 +33,18 @@ header{
     align-items: center;
 }
 
-header .logo{
-    width: 50px;
-    object-fit: cover;
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a h1 {
+    display: flex;
+    align-items: center;
+}
+
+header a h1 i {
+    color: var(--primary-color);
 }
 
 nav{
@@ -53,6 +62,7 @@ nav{
     opacity: 0;
     pointer-events: none;
     transition: .3s;
+    z-index: 999;
 }
 
 .active{
@@ -120,37 +130,31 @@ nav ul li a{
     width: 30px;
 } 
 
-.first{
-    background: linear-gradient(0deg, #000000bb, #000000bb);
-    height: 60vh;
+.hero-sec{
+    background: linear-gradient(0deg, #000000b1, #000000b1), url(../images/cap-cam.png);
     background-size: cover;
     background-position: center;
-    color: white;
-    position: relative;
+    height: 50vh;
 }
 
-.first img{
-    position: fixed;
-    height: 65vh;
-    width: 100%;
-    object-fit: cover;
-    z-index: -999;
-}
-
-.c2{
-    padding: 10px;
-    height: 100%;
+.hero{
+    height: 40vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    color: white;
 }
 
 .hero h1{
     color: var(--primary-color);
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 2px;
+}
+
+.hero p{
+    font-size: .8rem;
 }
 
 .second{
@@ -161,12 +165,17 @@ nav ul li a{
     padding: 10px 10px 70px;
 }
 
+.contact{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .contact-info{
     margin-bottom: 3em;
 }
 
-.contact-info h2{
-    margin: 1.5em 0 .5em;
+.c3 h2{
+    margin: 1.5em 0 1em;
     font-size: 2rem;
     font-weight: 500;
 }
@@ -193,6 +202,7 @@ form{
     flex-direction: column;
     gap: 2em;
     width: 100%;
+    margin-bottom: 3em;
 }
 
 .input-container{
@@ -206,7 +216,7 @@ form{
     padding: 1em .5em;
     outline: none;
     border: none;
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 1px solid black;
     background: var(--back-color);
     transition: .3s;
 }
@@ -245,9 +255,9 @@ textarea:focus{
 }
 
 form button{
-    width: 15rem;
-    padding: 1em;
-    font-size: 1.2rem;
+    width: 10rem;
+    padding: .8em;
+    font-size: 1rem;
     border-radius: .7em;
     background: var(--primary-color);
     border: none;
@@ -257,10 +267,10 @@ form button{
 
 
 
-footer{
-    background: linear-gradient(0deg, #000000e0, #000000e0), url(../images/1068589.jpg);
+footer {
+    background: linear-gradient(0deg, #000000ba, #000000ba), url(../images/canon-lens-captures-glass-selective-focus-generated-by-ai.jpeg);
     background-size: cover;
-    background-position: right;
+    background-position: center;
     color: white;
 }
 
@@ -271,7 +281,7 @@ footer{
     padding: 1em;
 }
 
-.last-page-content{
+.last-page-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -280,17 +290,18 @@ footer{
     text-align: center;
 }
 
-.last-page h2, h1{
+.last-page h2,
+h1 {
     text-align: center;
 }
 
-.contact-us h1{
+.contact-us h1 {
     font-weight: 400;
     margin: 1rem;
     font-size: 1.5rem;
 }
 
-.contact-us a{
+.contact-us a {
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -300,7 +311,7 @@ footer{
     justify-content: center;
 }
 
-.contact-us a i{
+.contact-us a i {
     background: white;
     color: black;
     padding: .6rem;
@@ -309,56 +320,61 @@ footer{
     transition: .3s;
 }
 
-.contact-us a:hover i{
+.contact-us a:hover i {
     background: var(--primary-color);
     color: white;
 }
 
-.logo img{
-    width: 80px;
-    margin: .7rem;
+.logo a {
+    color: white;
+    text-decoration: none;
 }
 
-.logo h2{
-    font-weight: 300;
+.logo a h1 {
+    display: flex;
+    align-items: center;
 }
 
-.quick-links h1{
+.logo a h1 i {
+    color: var(--primary-color);
+}
+
+.quick-links h1 {
     font-weight: 400;
     margin: .8rem;
     font-size: 1.5rem;
 }
 
-.links ul{
+.links ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
-.links ul li a{
+.links ul li a {
     text-decoration: none;
     color: rgb(165, 165, 165);
     font-weight: 200;
 }
 
-.socials h1{
+.socials h1 {
     font-weight: 400;
     margin: .8rem;
     font-size: 1.5rem;
 }
 
-.social-icons{
+.social-icons {
     display: flex;
     gap: 1rem;
 }
 
-.social-icons a{
+.social-icons a {
     color: white;
     text-decoration: none;
 }
 
-.social-icons a i{
+.social-icons a i {
     font-size: 1.5rem;
     padding: .7rem;
     background: rgb(27, 27, 27);
@@ -366,9 +382,10 @@ footer{
     cursor: pointer;
 }
 
-.last-page p{
-    font-size: .9rem;
+.last-page p {
+    font-size: .8rem;
     font-weight: 200;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px){
@@ -395,9 +412,9 @@ footer{
     }
 
     header nav ul li a{
-        color: black;
+        color: white;
         font-weight: 300;
-        font-size: .9rem;
+        font-size: .85rem;
         position: relative;
     }
 
@@ -424,11 +441,11 @@ footer{
     }
 
     .hero h1{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .hero p{
-        font-size: 1.1rem;
+        font-size: .9rem;
         font-weight: 300;
     }
 
@@ -472,6 +489,12 @@ footer{
     .quick-links h1 {
         font-size: 1.5rem;
     }
+
+    .contact{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -487,7 +510,7 @@ footer{
     }
 
     header nav ul {
-        gap: 6em;
+        gap: 4em;
     }
 
     /* .hero-section h1{
@@ -511,7 +534,7 @@ footer{
     }
 
     .info {
-        background: rgb(225, 225, 225);
+        background: var(--secondary-color);
         padding: 1.5em 2em;
         border-radius: .2em;
         box-shadow: -2px 5px 15px rgb(206, 206, 206);
@@ -519,6 +542,7 @@ footer{
 
     .info i {
         font-size: 2rem;
+        color: white;
     }
 
 }

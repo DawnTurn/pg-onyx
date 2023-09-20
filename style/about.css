@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary-color: #846d62;
+    --primary-color: #fca431;
     --secondary-color: #a8a29c;
     --back-color: whitesmoke;
 }
@@ -19,13 +19,6 @@ body {
     overflow: hidden;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    background: #e5e5e5;
-    z-index: 999;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -33,9 +26,18 @@ header {
     align-items: center;
 }
 
-header .logo {
-    width: 50px;
-    object-fit: cover;
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a h1 {
+    display: flex;
+    align-items: center;
+}
+
+header a h1 i {
+    color: var(--primary-color);
 }
 
 nav {
@@ -53,15 +55,12 @@ nav {
     opacity: 0;
     pointer-events: none;
     transition: .3s;
+    z-index: 999;
 }
 
 .active {
     opacity: 1;
     pointer-events: all;
-}
-
-nav img {
-    width: 90px;
 }
 
 nav ul {
@@ -123,6 +122,25 @@ nav ul li a {
     width: 30px;
 }
 
+.hero{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.689)), url(../images/professional-photographer-takes-close-up-with-slr-camera-generated-by-ai.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.hero-sec{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-sec h1{
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
 .c2{
     padding: .7em;
     width: 100%;
@@ -145,6 +163,7 @@ nav ul li a {
     font-weight: 300;
     line-height: 2em;
     letter-spacing: .9px;
+    font-size: .8rem;
 }
 
 .about-content p span{
@@ -176,7 +195,7 @@ hr{
 }
 
 .mission h3{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -194,13 +213,13 @@ hr{
 
 
 footer {
-    background: linear-gradient(0deg, #000000e0, #000000e0), url(../images/1068589.jpg);
+    background: linear-gradient(0deg, #000000d6, #000000d6), url(../images/canon-lens-captures-glass-selective-focus-generated-by-ai.jpeg);
     background-size: cover;
-    background-position: right;
+    background-position: center;
     color: white;
 }
 
-.last-page{
+.last-page {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -223,7 +242,7 @@ h1 {
 
 .contact-us h1 {
     font-weight: 400;
-    margin: .8em;
+    margin: 1rem;
     font-size: 1.5rem;
 }
 
@@ -251,13 +270,18 @@ h1 {
     color: white;
 }
 
-.logo img {
-    width: 80px;
-    margin: .7rem;
+.logo a {
+    color: white;
+    text-decoration: none;
 }
 
-.logo h2 {
-    font-weight: 300;
+.logo a h1 {
+    display: flex;
+    align-items: center;
+}
+
+.logo a h1 i {
+    color: var(--primary-color);
 }
 
 .quick-links h1 {
@@ -290,8 +314,9 @@ h1 {
     gap: 1rem;
 }
 
-.social-icons a{
+.social-icons a {
     color: white;
+    text-decoration: none;
 }
 
 .social-icons a i {
@@ -303,8 +328,9 @@ h1 {
 }
 
 .last-page p {
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 200;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -333,9 +359,9 @@ h1 {
     }
 
     header nav ul li a {
-        color: black;
+        color: white;
         font-weight: 300;
-        font-size: .9rem;
+        font-size: .85rem;
         position: relative;
     }
 
@@ -444,7 +470,7 @@ h1 {
     }
 
     header nav ul{
-        gap: 6em;
+        gap: 4em;
     }
 
     .c2{
@@ -459,5 +485,12 @@ h1 {
     .mission, hr{
         width: 60%;
         margin: 1em auto;
+    }
+
+    .c2 p {
+        font-weight: 300;
+        line-height: 2em;
+        letter-spacing: .9px;
+        font-size: .9rem;
     }
 }
