@@ -195,6 +195,10 @@ hr{
     transition: .3s;
 }
 
+.mission p span{
+    font-weight: bold;
+}
+
 .mission h3{
     font-size: 1.4rem;
     display: flex;
