@@ -498,4 +498,17 @@ h1 {
         letter-spacing: .9px;
         font-size: .9rem;
     }
+
+    .flex-out{
+        display: flex;
+        gap: 2em;
+    }
+
+    .flex1{
+        width: 50%;
+    }
+
+    .mission, hr{
+        width: 100%;
+    }
 }
