@@ -10,10 +10,10 @@ burger.addEventListener('click', () => {
     body.classList.toggle('no-scroll')
 })
 
-tl.fromTo(".hero", 0.8, { width: 0 }, { width: "100%", ease: Power4.easeInOut })
+tl.fromTo(".s1", 0.5, { width: 0 }, { width: "100%", ease: Power4.easeInOut })
   .fromTo(
     ".hero-section",
-    0.7,
+    0.5,
     { opacity: 0, y: "-40px" },
     { opacity: 1, y: 0, ease: "bounce" }
   )
@@ -26,59 +26,83 @@ tl.fromTo(".hero", 0.8, { width: 0 }, { width: "100%", ease: Power4.easeInOut })
   );
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.fromTo('.about-us', .5, 
-    {opacity: 0, x: '-50px'}, {
+gsap.fromTo('.about-heading h3', .5, 
+    {opacity: 0, y: '100px'}, {
         opacity: 1,
-        x: 0,
+        y: 0,
         scrollTrigger: {
-            trigger: '.about-us',
-            start: 'top 700',
+            trigger: '.about-heading',
+            start: 'top 70%',
+            end: 'bottom center',
+        }
+  })
+
+gsap.fromTo('.about-heading p', .5, 
+    {opacity: 0, y: '100px'}, {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+            trigger: '.about-heading',
+            start: 'top 65%',
+            end: 'bottom center',
+        }
+    })
+
+gsap.fromTo('.about-heading a', .5, 
+    {opacity: 0, y: '100px'}, {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+            trigger: '.about-heading',
+            start: 'top 60%',
             end: 'bottom center',
         }
     })
 
 gsap.fromTo(
-  ".portfolio",
-  0.5,
-  { opacity: 0, x: "50px" },
+  ".pic",
+  1.6,
+  { opacity: 0, y: "100px" },
   {
     opacity: 1,
-    x: 0,
+    y: 0,
+    stagger: .2,
+    ease: 'elastic',
     scrollTrigger: {
-      trigger: ".portfolio",
-      start: "top 700",
+      trigger: ".portfolio-sec",
+      start: "top 50%",
       end: "bottom center",
-
-      
     },
   }
 );
-
-
-gsap.fromTo('.services', .5, 
-    {opacity: 0, x: '-50px'}, {
-        opacity: 1,
-        x: 0,
-        scrollTrigger: {
-            trigger: '.services',
-            start: 'top 700',
-            end: 'bottom center',
-        }
-    })
-
 
 gsap.fromTo(
-  ".Contact",
-  0.5,
-  { opacity: 0, x: "50px" },
+  ".portfolio-sec a",
+  .5,
+  { opacity: 0, y: "80px" },
   {
     opacity: 1,
-    x: 0,
+    y: 0,
     scrollTrigger: {
-      trigger: ".Contact",
-      start: "top 700",
+      trigger: ".portfolio-sec",
+      start: "50% 40%",
       end: "bottom center",
     },
   }
 );
 
+gsap.fromTo(
+  ".seen",
+  .5,
+  { opacity: 0, x: "-80px" },
+  {
+    opacity: 1,
+    x: 0,
+    stagger: .15,
+    scrollTrigger: {
+      trigger: ".portfolio-sec",
+      start: "50% 20%",
+      end: "bottom center",
+    },
+  }
+);

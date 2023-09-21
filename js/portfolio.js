@@ -10,7 +10,7 @@ burger.addEventListener("click", () => {
 });
 
 
-tl.fromTo(".first", 0.8, { width: 0 }, { width: "100%", ease: Power4.easeInOut })
+tl.fromTo(".hero-sec", 0.8, { width: 0 }, { width: "100%", ease: Power4.easeInOut })
   .fromTo(
     ".hero",
     0.7,
