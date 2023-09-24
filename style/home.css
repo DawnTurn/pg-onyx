@@ -245,7 +245,7 @@ nav ul li a {
 .nature{
     background: url(../images/bird-with-yellow-head-red-feathers-sits-branch-with-flower-background.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .sunset{
@@ -263,7 +263,7 @@ nav ul li a {
 .fashion {
     background: url(../images/fashion.png);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .bw {
